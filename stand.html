@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stands Collection</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="top-bar">
+  <button class="back-btn" onclick="goBack()">← Back</button>
+  <h2 class="page-title">Stands Collection</h2>
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="🔍 Search products..." onkeyup="filterProducts()">
+  </div>
+</div>
+
+
+
+<div class="product-grid">
+
+
+  <div class="product">
+    <img src="photosstand/blackdummi.jpeg">
+    <p>Black Adjustable Stand 4f,5f,6feet Available</p>
+    <span class="price">₹1600 to 2000</span>
+    <button onclick="addToCart('Black Adjustable Stand 4f,5f,6feet Available', 1600, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+  
+  <div class="product">
+    <img src="photosstand/blackheavy.jpeg">
+    <p>Black Heavy Stand 4f,5f,6feet Available</p>
+    <span class="price">₹2400 to 2800</span>
+    <button onclick="addToCart('Black Heavy Stand 4f,5f,6feet Available', 2400, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+  
+  <div class="product">
+    <img src="photosstand/belthang.jpeg">
+    <p>Belt Stand WallHolding Type</p>
+    <span class="price">₹350,450,650</span>
+    <button onclick="addToCart('Belt Stand WallHolding Type', 350, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+  
+  <div class="product">
+    <img src="photosstand/holderstand.jpeg">
+    <p>Standing Reckmodel also use Handing dress</p>
+    <span class="price">₹4500</span>
+    <button onclick="addToCart('Standing Reckmodel also use Handing dress', 4500, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photosstand/poojadoubleside.jpeg">
+    <p>Pooja Double 4 Side Dress Hanging Stand</p>
+    <span class="price">₹5500</span>
+    <button onclick="addToCart('Pooja Double 4 Side Dress Hanging Stand', 5500, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photosstand/silverthink.jpeg">
+    <p>Double Steel Heavy Stand</p>
+    <span class="price">₹3500</span>
+    <button onclick="addToCart('Double Steel Heavy Stand', 3500, 'display-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+
+  
+  <div class="product">
+    <img src="photosstand/foldable.jpeg">
+    <p>Foldable Step Ladder</p>
+    <span class="price">₹3500</span>
+    <button onclick="addToCart('Foldable Step Ladder', 3500, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+  
+  <div class="product">
+    <img src="photosstand/blackjollystand.jpeg">
+    <p>Black Items Hanging Stand</p>
+    <span class="price">₹18,000</span>
+    <button onclick="addToCart('Black Items Hanging Stand', 18000, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+  
+  <div class="product">
+    <img src="photosstand/jolly.jpeg">
+    <p>Stainless Steel jolly</p>
+    <span class="price">₹130 (Sqf)</span>
+    <button onclick="addToCart('Stainless Steel jolly', 130, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+  
+  <div class="product">
+    <img src="photosstand/jallystand.jpeg">
+    <p>Jolly support Stand</p>
+    <span class="price">₹2500,3500,4000</span>
+    <button onclick="addToCart('Jolly support Stand', 2500, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photosstand/4waynew.jpeg">
+    <p>Four way Z Stand</p>
+    <span class="price">₹2500</span>
+    <button onclick="addToCart('Four way Z Stand', 2500, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photosstand/blackwhite.jpeg">
+    <p>Double adjustment Stand</p>
+    <span class="price">₹3500</span>
+    <button onclick="addToCart('Double adjustment Stand', 3500, 'display-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photosstand/doublenormal.jpeg">
+    <p>Goda Double Stand</p>
+    <span class="price">₹1400</span>
+    <button onclick="addToCart('Goda Double Stand', 1400, 'shoe-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+   <div class="product">
+    <img src="photosstand/fourway.jpeg">
+    <p>Four Way Stand</p>
+    <span class="price">₹2500</span>
+    <button onclick="addToCart('Four Way Stand', 2500, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photosstand/goda.jpeg">
+    <p>Display Stand</p>
+    <span class="price">₹1800</span>
+    <button onclick="addToCart('Display Stand', 1800, 'display-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photosstand/godadouble.jpeg">
+    <p>Double alignment Stand</p>
+    <span class="price">₹2500</span>
+    <button onclick="addToCart('Double alignment', 2500, 'shoe-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+    
+  <div class="product">
+    <img src="photosstand/goldstand.jpeg">
+    <p>Gold Single Stand</p>
+    <span class="price">₹7500</span>
+    <button onclick="addToCart('Gold Single Stand', 7500, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photosstand/ironstand.jpeg">
+    <p>Ironing Stand</p>
+    <span class="price">₹1800</span>
+    <button onclick="addToCart('Ironing Stand', 1800, 'display-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photosstand/kammal1.jpeg">
+    <p>Kammal Stainless Steel Stand</p>
+    <span class="price">₹2500</span>
+    <button onclick="addToCart('Kammal Stainless Steel Stand', 2500, 'shoe-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+   
+  <div class="product">
+    <img src="photosstand/kammal2.jpeg">
+    <p>Kammal Heavy Quality Stand</p>
+    <span class="price">₹5500</span>
+    <button onclick="addToCart('Kammal Heavy Quality Stand', 5500, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photosstand/kammal3.jpeg">
+    <p>Display Kammal Stand</p>
+    <span class="price">₹550</span>
+    <button onclick="addToCart('isplay Kammal Stand', 550, 'display-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photosstand/silverdouble.jpeg">
+    <p>Steel Double Stand</p>
+    <span class="price">₹1800</span>
+    <button onclick="addToCart('Steel Double Stand', 1800, 'shoe-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+   <div class="product">
+    <img src="photosstand/standpooja.jpeg">
+    <p>Pooja Display Double Stand</p>
+    <span class="price">₹4500</span>
+    <button onclick="addToCart('Pooja Display Double Stand', 4500, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+  <div class="product">
+    <img src="photosstand/trolly1.jpeg">
+    <p>Trolly Stainless Steel (Size 18*24 inch)</p>
+    <span class="price">₹2500</span>
+    <button onclick="addToCart('Trolly Stainless Steel (Size 18*24 inch)', 2500, 'shoe-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+ 
+  <div class="product">
+    <img src="photosstand/trolly2.jpeg">
+    <p>Trolly Stainless Steel (Size 24*30 inch)</p>
+    <span class="price">₹3500</span>
+    <button onclick="addToCart('Trolly Stainless Steel (Size 24*30 inch)', 3500, 'garment-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photosstand/sstand.jpeg">
+    <p>S Model Display Stand</p>
+    <span class="price">₹1500</span>
+    <button onclick="addToCart(' S Model Display Stand', 1500, 'display-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photosstand/round.jpeg">
+    <p>Round Ring Model Display Stand</p>
+    <span class="price">₹1300</span>
+    <button onclick="addToCart('Round Ring Model Display Stand', 1300, 'shoe-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+   <div class="product">
+    <img src="photosstand/savasthink.jpeg">
+    <p>Sawasthik Stand</p>
+    <span class="price">₹1300</span>
+    <button onclick="addToCart('Sawasthik Stand', 1300, 'shoe-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photosstand/reck.jpeg">
+    <p>Reck Display Stand</p>
+    <span class="price">₹2500</span>
+    <button onclick="addToCart('Reck Display Stand', 2500, 'shoe-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+  <div class="product">
+    <img src="photosstand/belt.jpeg">
+    <p>Belt  Stand</p>
+    <span class="price">₹2500</span>
+    <button onclick="addToCart('Belt Stand', 2500, 'shoe-stand.png')">
+      Add to Cart
+    </button>
+  </div>
+
+</div>
+<footer class="footer">
+  
+  <div class="footer-brand">
+    <h3>🛕 Mahalakshmi Hangers</h3>
+    <p>Your trusted online shopping platform.</p>
+  </div>  
+
+  <div class="footer-social">
+    <!-- Replace 91XXXXXXXXXX with your number -->
+    <a href="https://wa.me/919884480279" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.instagram.com/mlp_hangers?igsh=NHZjemZ4MTlxZXJt" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="#">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </div>
+
+  <p class="copyright">
+    © 2026 Mahalakshmi Hangers. All Rights Reserved.
+  </p>
+
+</footer>
+
+
+</body>
+</html>

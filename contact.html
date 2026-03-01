@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Mahalakshmi Hangers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="info-header">
+  <a href="index.html">🏠 Home</a>
+  <h2>Contact Us</h2>
+</header>
+
+<div class="contact-container">
+
+  <div class="contact-info">
+    <h3>📍 Our Office</h3>
+    <p class="contact-address">
+      Old no.4 new no.15, 5th street Singara garden, old washermenpet Chennai-600021
+    </p>
+    <p>📞 <a href="tel:+919884480279" class="phone-link">+91 9884480279</a></p>
+    <p>📞 <a href="tel:+918122313762" class="phone-link">+91 8122313762</a></p>
+    <p>✉ MahalakshmiHangrs1@gmail.com</p>
+    <a href="https://maps.app.goo.gl/gTjy2pYC3f5Y5Vr47" target="_blank" class="map-link">
+      📍 location on Google Maps
+    </a>
+  </div>
+
+  <form class="contact-form" id="contactForm">
+    <h3>Return Message</h3>
+
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="tel" id="phone" placeholder="Contact Number" required>
+    <input type="text" id="subject" placeholder="Subject" required>
+    <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+
+    <button type="submit">Return Message</button>
+  </form>
+
+</div>
+
+<footer class="footer">
+  <h3>🛍 Mahalakshmi Hangers</h3>
+  <p>Your trusted online shopping partner.</p>
+  <p>© 2026 🛍 Mahalakshmi Hangers. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  var name = document.getElementById("name").value;
+  var phone = document.getElementById("phone").value;
+  var subject = document.getElementById("subject").value;
+  var message = document.getElementById("message").value;
+
+  var whatsappNumber = "919884480279"; // your WhatsApp number
+
+  var whatsappMessage =
+    "Name: " + name + "%0A" +
+    "Contact Number: " + phone + "%0A" +
+    "Subject: " + subject + "%0A" +
+    "Message: " + message;
+
+  var whatsappURL = "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
+
+  window.open(whatsappURL, "_blank");
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Male Maniquen</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="top-bar">
+  <button class="back-btn" onclick="goBack()">← Back</button>
+  <h2 class="page-title">Male Maniquen</h2>
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="🔍 Search products..." onkeyup="filterProducts()">
+  </div>
+</div>
+
+<div class="product-grid">
+
+  <!-- 12 Products -->
+
+  <div class="product">
+    <img src="photosmale/Rosegoldblack.jpeg">
+    <h3>Male black & Gold fiber</h3>
+    <p class="price">₹10500</p>
+    <button onclick="addToCart('Male black & Gold fiber', 10500, 'photosmale/bighead.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosmale/plasticgold.jpeg">
+    <h3>Male gold & white Plastic</h3>
+    <p class="price">₹8500</p>
+    <button onclick="addToCart('Male gold & white Plastic', 8500, 'photosmale/gold.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosmale/goldfiber.jpeg">
+    <h3>Male gold & white Fiber</h3>
+    <p class="price">₹10500</p>
+    <button onclick="addToCart('Male gold & white Fiber', 10500, 'photosmale/goldface.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosmale/bighead.jpeg">
+    <h3>Male Bighead fiber</h3>
+    <p class="price">₹7000</p>
+    <button onclick="addToCart('Male Bighead fiber', 7000, 'photosmale/bighead.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosmale/gold.png">
+    <h3>Male gold fiber</h3>
+    <p class="price">₹10500</p>
+    <button onclick="addToCart('Male gold fiber', 10500, 'photosmale/gold.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosmale/goldface.jpeg">
+    <h3>Male gold face plastic</h3>
+    <p class="price">₹7500</p>
+    <button onclick="addToCart('Male gold face plastic', 7500, 'photosmale/goldface.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosmale/makup.jpeg">
+    <h3>Gents mackup</h3>
+    <p class="price">₹6500</p>
+    <button onclick="addToCart('Gents mackup', 6500, 'female4.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosmale/marble.jpeg">
+    <h3>Marble face Male Fiber</h3>
+    <p class="price">₹7500</p>
+    <button onclick="addToCart('Marble face Male Fiber',7500, 'female5.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosmale/masmellow.jpeg">
+    <h3>Masmellow fiber Male</h3>
+    <p class="price">₹6500</p>
+    <button onclick="addToCart('Masmellow fiber Male', 6500, 'female6.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosmale/plain.jpeg">
+    <h3>Gents Male fiber Plain</h3>
+    <p class="price">₹6300</p>
+    <button onclick="addToCart('Gents Male fiber Plain',6300, 'female7.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosmale/skin.jpeg">
+    <h3>Gents Skin Plastic </h3>
+    <p class="price">₹3500</p>
+    <button onclick="addToCart('Gents Skin Plastic ', 3500, 'female8.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosmale/sitting.jpeg">
+    <h3>Sitting Male Fiber</h3>
+    <p class="price">₹7000</p>
+    <button onclick="addToCart('Sitting Male Fiber', 7000, 'female9.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosmale/plainplastic.jpeg">
+    <h3>Plastic Male standing doll</h3>
+    <p class="price">₹5500</p>
+    <button onclick="addToCart('Plastic Male standing doll', 5500, 'female10.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosmale/rig.jpeg">
+    <h3>Gents ring Fiber </h3>
+    <p class="price">₹6500</p>
+    <button onclick="addToCart('Gents ring Fiber ', 6500, 'female11.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosmale/skinmackup.jpeg">
+    <h3>Gents Skin Mackup </h3>
+    <p class="price">₹4500</p>
+    <button onclick="addToCart('Gents Skin Mackup', 4500, 'female12.png')">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="photosmale/leg.jpeg">
+    <h3>Gents Skin Mackup </h3>
+    <p class="price">₹4500</p>
+    <button onclick="addToCart('Gents Skin Mackup', 4500, 'female12.png')">Add to Cart</button>
+  </div>
+
+   <div class="product">
+    <img src="photosmale/leg2.jpeg">
+    <h3>Gents Skin Mackup </h3>
+    <p class="price">₹4500</p>
+    <button onclick="addToCart('Gents Skin Mackup', 4500, 'female12.png')">Add to Cart</button>
+  </div>
+</div>
+ <footer class="footer">
+  
+  <div class="footer-brand">
+    <h3>🛕 Mahalakshmi Hangers</h3>
+    <p>Your trusted online shopping platform.</p>
+  </div>  
+
+  <div class="footer-social">
+    <!-- Replace 91XXXXXXXXXX with your number -->
+    <a href="https://wa.me/919884480279" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.instagram.com/mlp_hangers?igsh=NHZjemZ4MTlxZXJt" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="#">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </div>
+
+  <p class="copyright">
+    © 2026 Mahalakshmi Hangers. All Rights Reserved.
+  </p>
+
+</footer>
+</body>
+</html>

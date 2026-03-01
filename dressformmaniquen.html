@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DressForm Maniquen</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="top-bar">
+  <button class="back-btn" onclick="goBack()">← Back</button>
+  <h2 class="page-title">DressForm Maniquen</h2>
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="🔍 Search products..." onkeyup="filterProducts()">
+  </div>
+</div>
+
+<div class="product-grid">
+
+  <!-- 17 Products -->
+
+   <div class="product">
+    <img src="photosdressform/plasticmeasurement.jpeg">
+    <h3>(DressForm) Plastic Body Base Model</h3>
+    <p class="price">₹1800</p>
+    <button onclick="addToCart('Female white Hand (DressForm)', 1800, 'female1.png')">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="photosdressform/tharmakol.jpeg">
+    <h3>(DressForm) Wooden Model</h3>
+    <p class="price">₹2800</p>
+    <button onclick="addToCart('Female white Hand (DressForm)', 2800, 'female1.png')">Add to Cart</button>
+  </div>
+   <div class="product">
+    <img src="photosdressform/dressformwhite.jpeg">
+    <h3>Female white new atractive deisgn (DressForm)</h3>
+    <p class="price">₹2500</p>
+    <button onclick="addToCart('Female white Hand (DressForm)', 2500, 'female1.png')">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="photosdressform/whitehand.jpeg">
+    <h3>Female white with Hand (DressForm)</h3>
+    <p class="price">₹4500</p>
+    <button onclick="addToCart('Female white Hand (DressForm)', 4500, 'female1.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/skinwood.jpeg">
+    <h3>Skin DressForm Wooden Model</h3>
+    <p class="price">₹4000</p>
+    <button onclick="addToCart('Skin DressForm Wooden Model', 4000, 'female2.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/skinhand.jpeg">
+    <h3>Skin DressForm (With Hand)</h3>
+    <p class="price">₹4500</p>
+    <button onclick="addToCart('Skin DressForm Wooden Model (With Hand)', 4500, 'female3.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/malewood.jpeg">
+    <h3>Gents BLack Dressform Wooden Model</h3>
+    <p class="price">₹4500</p>
+    <button onclick="addToCart('Gents BLack Dressform', 4500, 'female4.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/maleweel.jpeg">
+    <h3>Gents BLack Dressform </h3>
+    <p class="price">₹3500</p>
+    <button onclick="addToCart('Gents BLack Dressform ', 3500, 'female5.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/kidweel.jpeg">
+    <h3>Kids DressForm Black</h3>
+    <p class="price">₹2500</p>
+    <button onclick="addToCart('Kids DressForm Black', 2500, 'female6.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/kidcolour.jpeg">
+    <h3>Skin Wooden Round Bass Model</h3>
+    <p class="price">₹2500</p>
+    <button onclick="addToCart('Skin Wooden Round Bass Model', 2500, 'female7.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/handwood.jpeg">
+    <h3>Ladie Black With Hand Wooden model</h3>
+    <p class="price">₹4500</p>
+    <button onclick="addToCart('Ladie Black With Hand Wooden model', 4500, 'female8.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/fullbody.jpeg">
+    <h3>Ladies DressForm Full Body </h3>
+    <p class="price">₹9000</p>
+    <button onclick="addToCart('Ladies DressForm Full Body ', 9000, 'female9.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/femalewood.jpeg">
+    <h3>Ladies Black Wooden Model Without Hand</h3>
+    <p class="price">₹3500</p>
+    <button onclick="addToCart('Ladies Black Wooden Model Without Hand', 3500, 'female10.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/femaleweel.jpeg">
+    <h3>DressForm Black WithoutHand</h3>
+    <p class="price">₹2800</p>
+    <button onclick="addToCart('DressForm Black WithoutHand', 2800, 'female11.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/femalehand.jpeg">
+    <h3> LadieDressForm WithHAnd Black</h3>
+    <p class=" price">₹4500</p>
+    <button onclick="addToCart('LadieDressForm WithHAnd Black', 4500, 'female12.png')">Add to Cart</button>
+  </div>
+    
+  
+  <div class="product">
+    <img src="photosdressform/blousewhitehand.jpeg">
+    <h3>Blouse White With Hand</h3>
+    <p class="price">₹1800</p>
+    <button onclick="addToCart('Blouse White With Hand', 1800, 'female8.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/blouseskinhand.jpeg">
+    <h3>Blouse Skin With Hand</h3>
+    <p class="price">₹1800</p>
+    <button onclick="addToCart('Blouse Skin With Hand', 1800, 'female9.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/blouseset.jpeg">
+    <h3>BlouseSet Withhand Black</h3>
+    <p class="price">₹7500</p>
+    <button onclick="addToCart('BlouseSet Withhand Black', 7500, 'female10.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/blousehand.jpeg">
+    <h3>Blouse With hand Black</h3>
+    <p class="price">₹1800</p>
+    <button onclick="addToCart('Blouse With hand Black', 1800, 'female11.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosdressform/blouse.jpeg">
+    <h3>Blouse Without hand Black</h3>
+    <p class="price">₹1400<p>
+    <button onclick="addToCart('Blouse Without hand Black', 1400, 'female12.png')">Add to Cart</button>
+  </div>
+</div>
+ <footer class="footer">
+  
+  <div class="footer-brand">
+    <h3>🛕 Mahalakshmi Hangers</h3>
+    <p>Your trusted online shopping platform.</p>
+  </div>  
+
+  <div class="footer-social">
+    <!-- Replace 91XXXXXXXXXX with your number -->
+    <a href="https://wa.me/919884480279" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.instagram.com/mlp_hangers?igsh=NHZjemZ4MTlxZXJt" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="#">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </div>
+
+  <p class="copyright">
+    © 2026 Mahalakshmi Hangers. All Rights Reserved.
+  </p>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahalakshmi Hangers</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header class="navbar">
+  <div class="logo">
+    <strong><h1>🛕 Mahalakshmi Hangers</h1></strong>
+  </div>
+
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="🔍 Search products..." onkeyup="filterProducts()">
+  </div>
+
+  <div class="navbar-right">
+    <a class="whatsapp-nav-link" href="https://wa.me/919884480279" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a class="cart-link" href="cart.html">🛒 <span id="cart-count">0</span></a>
+
+    <div class="menu-icon" onclick="toggleMenu()" role="button" tabindex="0" aria-label="Open menu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="cart.html">🛒 Cart</a></li>
+    <li><a href="about.html"> 🧾 About</a></li>
+    <li><a href="contact.html">📞 Contact</a></li>
+  </ul>
+</header>
+
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleMenu()"></div>
+
+<div class="product-grid home-grid category-grid">
+  <div class="product" onclick="window.location.href='maniquen.html'" data-product-name="Maniquen">
+  <img src="photoshome/maniquen.png" alt="Maniquen">
+  <p>Maniquens</p>
+</div>
+
+  <div class="product" onclick="window.location.href='hangers.html'" data-product-name="Hangers">
+    <img src="photoshome/hangers.png" alt="Hangers">
+    <p>Hangers</p>
+  
+  </div>
+
+  <div class="product" onclick="window.location.href='hangingdoll.html'" data-product-name="Hanging Doll">
+    <img src="photoshome/hangingdoll.png" alt="Hanging Doll">
+    <p>Hanging Dolls</p>
+
+  </div>
+
+  <div class="product" onclick="window.location.href='stand.html'" data-product-name="Stands">
+    <img src="photoshome/stands.png" alt="Stands">
+    <p>Stands</p>
+   
+  </div>
+
+
+</div> <!-- End of 4 category boxes -->
+
+<div class="section-divider">
+  <hr>
+</div>
+  <h1>Top Selling Items</h1>
+
+  <!-- New 20 product boxes with Add to Cart buttons -->
+   <div class="product-grid home-grid">
+
+    <div class="product product-with-cart" data-product-name="Product 1">
+      <img src="photoshomes/wallstand.jpeg" alt="Stands" class="product-img">
+      <p>Hanging Model Wall Mount</p>
+      <span class="price">₹220 (1 pcs)</span>
+      <button onclick="addToCart('Hanging Model Wall Mount', 220, '')">Add to Cart</button>
+    </div>
+    <div class="product product-with-cart" data-product-name="Product 1">
+      <img src="photoshomes/wallmount.jpeg" alt="Stands" class="product-img">
+      <p>Revolving Wall Mount</p>
+      <span class="price">₹220 (1 pcs)</span>
+      <button onclick="addToCart('Revolving Wall Mount', 220, '')">Add to Cart</button>
+    </div>
+   <div class="product product-with-cart" data-product-name="Product 1">
+     <img src="photoshomes/mirrorstand.jpeg" alt="Stands" class="product-img">
+     <p>Cooling Glass Stand</p>
+     <span class="price">₹1600</span>
+     <button onclick="addToCart('Cooling Glass Stand', 1600, '')">Add to Cart</button>
+     </div>
+
+  <div class="product product-with-cart" data-product-name="Product 2">
+  <img src="photoshomes/blouse.jpeg" alt="Stands" class="product-img">
+    <p>Blouse Doll Fiber</p>
+    <span class="price">₹1400</span>
+    <button onclick="addToCart('Blouse Doll Fiber', 1400, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 3">
+    <img src="photoshomes/hand.jpeg" alt="Stands" class="product-img">
+    <p>Bangle Hand Fiber</p>
+    <span class="price">₹350</span>
+    <button onclick="addToCart('Bangle Hand Fiber', 350, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 4">
+     <img src="photoshomes/hand2.jpeg" alt="Stands" class="product-img">
+    <p>Ring Hand Fiber Glass</p>
+    <span class="price">₹250</span>
+    <button onclick="addToCart('Ring Hand Fiber Glass', 250, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 5">
+    <img src="photoshomes/handring.jpeg" alt="Stands" class="product-img">
+    <p>Ring & Bangle Fiber Hand</p>
+    <span class="price">₹300</span>
+    <button onclick="addToCart('Ring & Bangle Fiber Hand', 300, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 6">
+     <img src="photoshomes/kammal.jpeg" alt="Stands" class="product-img">
+    <p>Kammal Display stand</p>
+    <span class="price">₹280</span>
+    <button onclick="addToCart('Kammal Display stand', 280, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 7">
+     <img src="photoshomes/katchif.jpeg" alt="Stands" class="product-img">
+    <p>Katchif Stand Stainless Steel</p>
+    <span class="price">₹260</span>
+    <button onclick="addToCart('Katchif Stand Stainless Steel', 260, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 8">
+     <img src="photoshomes/ladiehead.jpeg" alt="Stands" class="product-img">
+    <p>Shall doll head</p>
+    <span class="price">₹300</span>
+    <button onclick="addToCart('Shall doll head', 300, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 9">
+    <img src="photoshomes/legladies.jpeg" alt="Stands" class="product-img">
+    <p>Leggins Single legs With Stand</p>
+    <span class="price">₹250</span>
+    <button onclick="addToCart('Leggins Single legs With Stand', 250, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 10">
+     <img src="photoshomes/legshock.jpeg" alt="Stands" class="product-img">
+    <p>Legs Fiber Display </p>
+    <span class="price">₹450</span>
+    <button onclick="addToCart('Legs Fiber Display', 450, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 11">
+     <img src="photoshomes/headblach.jpeg" alt="Stands" class="product-img">
+    <p>Neckless Doll Fiber Display Body</p>
+    <span class="price">₹480</span>
+    <button onclick="addToCart('Neckless Doll Fiber Display Body', 480, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 12">
+    <img src="photoshomes/montex.jpeg" alt="Stands" class="product-img">
+    <p>Montex Rate Mission </p>
+    <span class="price">₹1600</span>
+    <button onclick="addToCart('Montex Rate Mission', 1600, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 13">
+    <img src="photoshomes/nailpolish.jpeg" alt="Stands" class="product-img">
+    <p>Nailpolish Stand </p>
+    <span class="price">₹1400</span>
+    <button onclick="addToCart('Nailpolish Stand', 1400, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 14">
+   <img src="photoshomes/nailpolish2.jpeg" alt="Stands" class="product-img">
+    <p>Nailpolish Rotatable stand</p>
+    <span class="price">₹1600</span>
+    <button onclick="addToCart('Nailpolish Rotatable stand', 1600, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 15">
+     <img src="photoshomes/nano.jpeg" alt="Stands" class="product-img">
+    <p>Nano Tape</p>
+    <span class="price">₹140</span>
+    <button onclick="addToCart('Nano Tape', 140, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 16">
+   <img src="photoshomes/neckless.jpeg" alt="Stands" class="product-img">
+    <p>Neckless Black stand</p>
+    <span class="price">₹160 to 220</span>
+    <button onclick="addToCart('Neckless Black stand', 160, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 17">
+  <img src="photoshomes/neckplastic.jpeg" alt="Stands" class="product-img">
+    <p>Neckless Plastic Body Stands</p>
+    <span class="price">₹95 to 220</span>
+    <button onclick="addToCart('Neckless Plastic Body Stands', 95, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 18">
+     <img src="photoshomes/pen1.jpeg" alt="Stands" class="product-img">
+    <p>Wooden PenStand</p>
+    <span class="price">₹475</span>
+    <button onclick="addToCart('Wooden PenStand', 475, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 19">
+     <img src="photoshomes/pen2.jpeg" alt="Stands" class="product-img">
+    <p>Wooden PenStand</p>
+    <span class="price">₹270</span>
+    <button onclick="addToCart('Wooden PenStand', 270, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 20">
+    <img src="photoshomes/ratemission.jpeg" alt="Stands" class="product-img">
+    <p>Rate mission</p>
+    <span class="price">₹350</span>
+    <button onclick="addToCart('Rate mission', 350, '')">Add to Cart</button>
+  </div>
+<div class="product product-with-cart" data-product-name="Product 21">
+   <img src="photoshomes/rek.jpeg" alt="Stands" class="product-img">
+    <p>Recks All Model Availble </p>
+    <span class="price">₹220 to 280</span>
+    <button onclick="addToCart('Recks All Model Availble', 65, '')">Add to Cart</button>
+  </div>
+  <div class="product product-with-cart" data-product-name="Product 21">
+   <img src="photoshomes/rekolder.jpeg" alt="Stands" class="product-img">
+    <p>ReckHolder All size Availble </p>
+    <span class="price">₹65 to 110</span>
+    <button onclick="addToCart('Recks All Model Availble', 65, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 22">
+  <img src="photoshomes/trail.jpeg" alt="Stands" class="product-img">
+    <p>Trail Room Stand</p>
+    <span class="price">₹180</span>
+    <button onclick="addToCart('Trail Room Stand', 180, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 23">
+     <img src="photoshomes/valayal.jpeg" alt="Stands" class="product-img">
+    <p>Bangle Display Stand</p>
+    <span class="price">₹750</span>
+    <button onclick="addToCart('Bangle Display Stand',750, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 24">
+     <img src="photoshomes/wall1.jpeg" alt="Stands" class="product-img">
+    <p>Display Cloth Stainless Steel Stands</p>
+    <span class="price">₹110 to 180</span>
+    <button onclick="addToCart('Display Cloth Stainless Steel Stands', 110, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 25">
+    <img src="photoshomes/wall2.jpeg" alt="Stands" class="product-img">
+    <p>Display Cloth Stainless Steel Stands</p>
+    <span class="price">₹140 to 180</span>
+    <button onclick="addToCart('Display Cloth Stainless Steel Stands', 140, '')">Add to Cart</button>
+  </div>
+
+   <div class="product product-with-cart" data-product-name="Product 26">
+     <img src="photoshomes/watch.jpeg" alt="Stands" class="product-img">
+    <p>Watch display Stand mirror Model</p>
+    <span class="price">₹2500</span>
+    <button onclick="addToCart('Watch display Stand mirror Model', 2500, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 27">
+     <img src="photoshomes/watchring.jpeg" alt="Stands" class="product-img">
+    <p>Watch,Bangle Plastic Stand</p>
+    <span class="price">₹280</span>
+    <button onclick="addToCart('Watch,Bangle Plastic Stand', 280, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 28">
+    <img src="photoshomes/zipcover.jpeg" alt="Stands" class="product-img">
+    <p>Zip Cover Big Size</p>
+    <span class="price">₹160 (1 pcs)</span>
+    <button onclick="addToCart('Zip Cover Big Size', 160, '')">Add to Cart</button>
+  </div>
+
+   <div class="product product-with-cart" data-product-name="Product 29">
+     <img src="photoshomes/bul.jpeg" alt="Stands" class="product-img">
+    <p>Bull Bull Mirror display hanging Bush</p>
+    <span class="price">₹120</span>
+    <button onclick="addToCart('Bull Bull Mirror display hanging Bush', 120, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 30">
+     <img src="photoshomes/katchif1.jpeg" alt="Stands" class="product-img">
+    <p>Katchif clip Hanging Hanger</p>
+    <span class="price">₹130</span>
+    <button onclick="addToCart('Katchif clip Hanging Hanger', 130, '')">Add to Cart</button>
+  </div>
+
+  <div class="product product-with-cart" data-product-name="Product 31">
+    <img src="photoshomes/katchif2.jpeg" alt="Stands" class="product-img">
+    <p>Katchif clip Hanging Hanger</p>
+    <span class="price">₹170</span>
+    <button onclick="addToCart('Katchif clip Hanging Hanger', 170, '')">Add to Cart</button>
+  </div>
+</div>
+
+</div>
+
+<footer class="footer">
+  
+  <div class="footer-brand">
+    <h3>🛕 Mahalakshmi Hangers</h3>
+    <p>Your trusted online shopping platform.</p>
+  </div>  
+
+  <div class="footer-social">
+    <!-- Replace 91XXXXXXXXXX with your number -->
+    <a href="https://wa.me/919884480279" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.instagram.com/mlp_hangers?igsh=NHZjemZ4MTlxZXJt" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="#">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </div>
+
+  <p class="copyright">
+    © 2026 Mahalakshmi Hangers. All Rights Reserved.
+  </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

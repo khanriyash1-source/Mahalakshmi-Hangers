@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Female Maniquen</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="top-bar">
+  <button class="back-btn" onclick="goBack()">← Back</button>
+  <h2 class="page-title">Female Maniquen</h2>
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="🔍 Search products..." onkeyup="filterProducts()">
+  </div>
+</div>
+
+<div class="product-grid">
+
+  <!-- 12 Products -->
+
+    <div class="product">
+    <img src="photosfemale/diamondbw.jpeg">
+    <h3> Black/White ladie Diamond Face Fiber</h3>
+    <p class="price">₹8000</p>
+    <button onclick="addToCart('Black/White ladie Diamond Face Fiber', 8000, 'photosfemale/skinl.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosfemale/golddiamond.jpeg">
+    <h3>ladie RoseGold Diamond face fiber</h3>
+    <p class="price">₹10000</p>
+    <button onclick="addToCart('ladie Gold Diamond face fiber', 10500, 'photosfemale/whiteplainfiberl.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosfemale/rosegolddiamond.jpeg">
+    <h3>Ladie Gold Diamond face fiber </h3>
+    <p class="price">₹10000</p>
+    <button onclick="addToCart('Ladie white plain pastic', 3800, 'photosfemale/whiteplainl.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosfemale/skinl.jpeg">
+    <h3> ladie skin mackup plastic</h3>
+    <p class="price">₹3000</p>
+    <button onclick="addToCart('ladie skin mackup plastic', 3000, 'photosfemale/skinl.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosfemale/whiteplainfiberl.jpeg">
+    <h3>ladie white plain fiber</h3>
+    <p class="price">₹5800</p>
+    <button onclick="addToCart('ladie white plain fiber', 5800, 'photosfemale/whiteplainfiberl.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosfemale/mackupl.jpeg">
+    <h3>ladie mackup white fiber</h3>
+    <p class="price">₹6500</p>
+    <button onclick="addToCart('ladie mackup white fiber',6500, 'photosfemale/mackupl.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosfemale/newhead.jpeg">
+    <h3>Ladie hairstyle doll fiber</h3>
+    <p class="price">₹6000</p>
+    <button onclick="addToCart('Ladie hairstyle doll fiber',6000, 'photosfemale/newhead.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosfemale/whiteplainl.jpeg">
+    <h3>Ladie white plain pastic</h3>
+    <p class="price">₹3800</p>
+    <button onclick="addToCart('Ladie white plain pastic', 3800, 'photosfemale/whiteplainl.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosfemale/goldfacel.jpeg">
+    <h3>Ladie gold face fiber</h3>
+    <p class="price">₹6300</p>
+    <button onclick="addToCart('Ladie gold face fiber', 6300, 'photosfemale/goldfacel.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosfemale/skinmackuphair.jpeg">
+    <h3>Skin mackup attachedhair</h3>
+    <p class="price">₹3500</p>
+    <button onclick="addToCart('Skin mackup attachedhair',3500, 'photosfemale/skinmackuphair.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosfemale/headless.png">
+    <h3> Ladie Headless Fiber </h3>
+    <p class="price">₹5500</p>
+    <button onclick="addToCart('Ladie Headless Fiber ',5500, 'photosfemale/headless.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosfemale/legginsleg.jpeg">
+    <h3>Leggins plaso Leg doll</h3>
+    <p class="price">₹1200</p>
+    <button onclick="addToCart('Leggins plaso Leg doll',1200, 'photosfemale/legginsleg.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosfemale/hairstylel.jpeg">
+    <h3>Hair Styling and designing doll</h3>
+    <p class="price">₹1800</p>
+    <button onclick="addToCart('Hair Styling and designing doll', 1800, 'photosfemale/hairstylel.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosfemale/goldhandl.jpeg">
+    <h3>Ladie Rosegold with white Fiber</h3>
+    <p class="price">₹8800</p>
+    <button onclick="addToCart('Ladie Rosegold with white Fiber',8800, 'photosfemale/goldhandl.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photosfemale/golddolll.jpeg">
+    <h3>Ladie Gold,silver,RoseGold Fiber Maniquen</h3>
+    <p class="price">₹9500</p>
+    <button onclick="addToCart('Ladie Gold,silver,RoseGold Fiber Maniquen',9500, 'photosfemale/golddolll.jpeg')">Add to Cart</button>
+  </div>
+    
+</div>
+      <footer class="footer">
+  
+  <div class="footer-brand">
+    <h3>🛕 Mahalakshmi Hangers</h3>
+    <p>Your trusted online shopping platform.</p>
+  </div>  
+
+  <div class="footer-social">
+    <!-- Replace 91XXXXXXXXXX with your number -->
+    <a href="https://wa.me/919884480279" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.instagram.com/mlp_hangers?igsh=NHZjemZ4MTlxZXJt" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="#">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </div>
+
+  <p class="copyright">
+    © 2026 Mahalakshmi Hangers. All Rights Reserved.
+  </p>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangers Collection</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="top-bar">
+  <button class="back-btn" onclick="goBack()">← Back</button>
+  <h2 class="page-title">Hangers Collection</h2>
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="🔍 Search products..." onkeyup="filterProducts()">
+  </div>
+</div>
+
+
+<div class="product-grid">
+  
+   <div class="product">
+    <img src="photoshangers/acrylic.png">
+    <p> Heavy Display Model Glass Hanger</p>
+    <span class="price">₹120 (1pcs) </span>
+    <button onclick="addToCart('Heavy Display Model Glass Hanger', 120 , 'plastic-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+  <div class="product">
+    <img src="photoshangers/555.jpeg">
+    <p> 555 Black Plastic Hanger</p>
+    <span class="price">₹95 (10pcs) </span>
+    <button onclick="addToCart('555 Black Plastic Hanger', 95 , 'plastic-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/555white.jpeg">
+    <p> 555 White Plastic Hanger</p>
+    <span class="price">₹180 (10pcs)</span>
+    <button onclick="addToCart('555 White Plastic Hanger<', 180, 'wooden-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/777white.jpeg">
+    <p>777 White Hanger</p>
+    <span class="price">₹140 (10pcs)</span>
+    <button onclick="addToCart('777 White Hanger', 140, 'metal-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+    <div class="product">
+    <img src="photoshangers/apex.jpeg">
+    <p>Apex heavy thikness Plastic Hanger</p>
+    <span class="price">₹350 (10pcs)</span>
+    <button onclick="addToCart('Apex heavy thikness Plastic Hanger', 350, 'plastic-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/apexbrown.jpeg">
+    <p>wooden Plastic Hanger</p>
+    <span class="price">₹280 (10pcs)</span>
+    <button onclick="addToCart('wooden Plastic Hanger', 280, 'wooden-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/clipplastic.jpeg">
+    <p>Clip Hanger Plastic</p>
+    <span class="price">₹130 (10pcs)</span>
+    <button onclick="addToCart('Clip Hanger Plastic', 130, 'metal-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+   <div class="product">
+    <img src="photoshangers/clipwood.jpeg">
+    <p>Wooden Clip Hanger</p>
+    <span class="price">₹350 (10pcs)</span>
+    <button onclick="addToCart('Wooden Clip Hanger', 350, 'plastic-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/coatplastic.jpeg">
+    <p>Coat Hanger Plastic</p>
+    <span class="price">₹350 (10pcs)</span>
+    <button onclick="addToCart('Coat Hanger Plastic', 350, 'wooden-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/colour.jpeg">
+    <p>Colour Nilon Hanger</p>
+    <span class="price">₹180 (10pcs)</span>
+    <button onclick="addToCart('Colour Nilon Hanger', 180, 'metal-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+   
+  <div class="product">
+    <img src="photoshangers/coloursmall.jpeg">
+    <p> Kids Colour Plastic Hanger</p>
+    <span class="price">₹140 (10pcs)</span>
+    <button onclick="addToCart(' Kids Colour Plastic Hanger', 140, 'plastic-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/darkbrowm.jpeg">
+    <p> Apex Wooden Hanger (Dark Brown)</p>
+    <span class="price">₹500 (10pcs)</span>
+    <button onclick="addToCart(' Apex Wooden Hanger (Dark Brown)', 500, 'wooden-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/frock.jpeg">
+    <p>frock Hanger (all Size available)</p>
+    <span class="price">₹160 (10pcs)</span>
+    <button onclick="addToCart('frock Hanger (all Size available)', 160, 'metal-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+    
+  <div class="product">
+    <img src="photoshangers/hangingwood.jpeg">
+    <p>New Display Model Hanger</p>
+    <span class="price">₹120 (1pcs)</span>
+    <button onclick="addToCart('New Display Model Hanger', 120, 'plastic-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/newclipwood.jpeg">
+    <p> Clip Wooden Hanger</p>
+    <span class="price">₹650 (10pcs)</span>
+    <button onclick="addToCart(' Clip Wooden Hanger', 650, 'wooden-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/plasticnormal.jpeg">
+    <p>Plastic Transparent Hanger</p>
+    <span class="price">₹95 (10pcs)</span>
+    <button onclick="addToCart('Plastic Transparent Hanger', 95, 'metal-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+    <div class="product">
+    <img src="photoshangers/plasticwoood.jpeg">
+    <p>Display Heavy Plastic Hanger</p>
+    <span class="price">₹75 (1pcs)</span>
+    <button onclick="addToCart('Display Heavy Plastic Hanger', 75, 'plastic-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/shall.jpeg">
+    <p>Shall Hanger</p>
+    <span class="price">₹60 (10pcs)</span>
+    <button onclick="addToCart('Shall Hanger', 60, 'wooden-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/smalllwood.jpeg">
+    <p>Kids wooden Hanger</p>
+    <span class="price">₹380 (10pcs)</span>
+    <button onclick="addToCart('Kids wooden Hanger', 380, 'metal-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+   <div class="product">
+    <img src="photoshangers/smallwhite.jpeg">
+    <p>Baby White Nilon Hanger</p>
+    <span class="price">₹140 (10pcs)</span>
+    <button onclick="addToCart('Baby White Nilon Hanger', 140, 'plastic-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/wood.jpeg">
+    <p>Wooden Hanger</p>
+    <span class="price">₹400 (10pcs)</span>
+    <button onclick="addToCart('Wooden Hanger', 400, 'wooden-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/woodnewbrown.jpeg">
+    <p>wooden heavy  Hanger</p>
+    <span class="price">₹120 (1pcs)</span>
+    <button onclick="addToCart('Wooden heavy Hanger', 120, 'metal-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+   
+  <div class="product">
+    <img src="photoshangers/woodplastic.jpeg">
+    <p>Wooden Plastic Normal Hanger</p>
+    <span class="price">₹250 (10pcs)</span>
+    <button onclick="addToCart('Plastic Hanger', 250, 'plastic-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/shallhanger.jpeg">
+    <p>Shall Hanger</p>
+    <span class="price">₹50 (1pcs)</span>
+    <button onclick="addToCart('Shall Hanger', 50, 'wooden-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/brahanger.jpeg">
+    <p>Bra Hanger</p>
+    <span class="price">₹150 (10pcs)</span>
+    <button onclick="addToCart('Bra Hanger', 150, 'metal-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="photoshangers/jally.jpeg">
+    <p>Jolly Hanger</p>
+    <span class="price">₹70 (10pcs)</span>
+    <button onclick="addToCart('Jolly Hanger', 70, 'metal-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+
+    <div class="product">
+    <img src="photoshangers/goldplastic.jpeg">
+    <p>Gold Hanger</p>
+    <span class="price">₹65 (1pcs)</span>
+    <button onclick="addToCart('Gold Hanger', 65, 'metal-hanger.png')">
+      Add to Cart
+    </button>
+  </div>
+</div>
+
+<footer class="footer">
+  
+  <div class="footer-brand">
+    <h3>🛕 Mahalakshmi Hangers</h3>
+    <p>Your trusted online shopping platform.</p>
+  </div>  
+
+  <div class="footer-social">
+    <!-- Replace 91XXXXXXXXXX with your number -->
+    <a href="https://wa.me/919884480279" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.instagram.com/mlp_hangers?igsh=NHZjemZ4MTlxZXJt" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="#">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </div>
+
+  <p class="copyright">
+    © 2026 Mahalakshmi Hangers. All Rights Reserved.
+  </p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids Maniquen</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="top-bar">
+  <button class="back-btn" onclick="goBack()">← Back</button>
+  <h2 class="page-title">Kids Maniquen</h2>
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="🔍 Search products..." onkeyup="filterProducts()">
+  </div>
+</div>
+
+<div class="product-grid">
+
+  <!-- 12 Products -->
+
+  <div class="product">
+    <img src="photoskid/baby.jpeg">
+    <h3>Baby zero size doll</h3>
+    <p class="price">₹1200</p>
+    <button onclick="addToCart('Baby zero size doll', 1200, 'photoskid/baby.jpeg')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photoskid/gold.jpeg">
+    <h3>Kids  (Gold,Rosegold,Silver)</h3>
+    <p class="price">₹4500</p>
+    <button onclick="addToCart('Kids(Gold,Rosegold,Silver)', 4500, 'female2.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photoskid/hand.jpeg">
+    <h3>New Model Kid Fiber (age2-3)</h3>
+    <p class="price">₹2500</p>
+    <button onclick="addToCart('New Model Kid Fiber (age2-3)', 2500, 'female3.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photoskid/mackup1.jpeg">
+    <h3>Skin Kid Mackup (90cm)</h3>
+    <p class="price">₹2400</p>
+    <button onclick="addToCart('Skin Kid Mackup (90cm)', 2400, 'female4.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photoskid/mackup2.jpeg">
+    <h3>Skin Kid Mackup (112cm)</h3>
+    <p class="price">₹2600</p>
+    <button onclick="addToCart('Skin Kid Mackup (112cm)', 2500, 'female5.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photoskid/mackup3.jpeg">
+    <h3>Skin Kid Mackup (130cm)</h3>
+    <p class="price">₹2800</p>
+    <button onclick="addToCart('Skin Kid Mackup (130cm)', 2800, 'female6.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photoskid/mackupkid.png">
+    <h3>Kids Fiber mackup Starting rate</h3>
+    <p class="price">₹2800</p>
+    <button onclick="addToCart('Kids Fiber Mackup', 2800, 'female7.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photoskid/plainkid.jpeg">
+    <h3>Kids Fiber Plain (₹2500 to 4500)</h3>
+    <p class="price">₹2500</p>
+    <button onclick="addToCart('Kids Fiber Plain', 2500, 'female8.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photoskid/plainplastic.jpeg">
+    <h3>White Plain Plastic (₹2400 t0 2800)</h3>
+    <p class="price">₹2400</p>
+    <button onclick="addToCart('White Plain Plastic ', 2400, 'female9.png')">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="photoskid/plastic.jpeg">
+    <h3>Kid Skin Plastic Wig model (₹1600 to 2000)</h3>
+    <p class="price">₹1600</p>
+    <button onclick="addToCart('Luxury Gold Finish', 7500, 'female10.png')">Add to Cart</button>
+  </div>
+
+</div>
+<hr>
+
+<footer class="footer">
+  
+  <div class="footer-brand">
+    <h3>🛕 Mahalakshmi Hangers</h3>
+    <p>Your trusted online shopping platform.</p>
+  </div>  
+
+  <div class="footer-social">
+    <!-- Replace 91XXXXXXXXXX with your number -->
+    <a href="https://wa.me/919884480279" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.instagram.com/mlp_hangers?igsh=NHZjemZ4MTlxZXJt" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="#">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </div>
+
+  <p class="copyright">
+    © 2026 Mahalakshmi Hangers. All Rights Reserved.
+  </p>
+
+</footer>
+
+</body>
+</html>
